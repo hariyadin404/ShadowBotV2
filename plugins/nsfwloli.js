@@ -7,5 +7,6 @@ handler.help = ['nsfwloli']
 handler.tags = ['nsfw']
 handler.command = /^(nsfwloli)$/i
 handler.limit = false
+handler.nsfw = true
 
 module.exports = handler
