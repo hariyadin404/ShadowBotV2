@@ -219,6 +219,9 @@ module.exports = {
           if (!'nsfw' in chat) chat.nsfw = false
         } else global.DATABASE.data.settings[m.chat] = {
           nsfw: false,
+                  }
+      } catch (e) {
+        console.error(e)
         }
 
       let usedPrefix
