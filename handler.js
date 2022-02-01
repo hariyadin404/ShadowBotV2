@@ -176,6 +176,7 @@ module.exports = {
           if (!('antiLink' in chat)) chat.antiLink = false
           if (!('antiLink2' in chat)) chat.antiLink2 = false
           if (!'antiToxic' in chat) chat.antiToxic = false
+          if (!'nsfw' in chat) chat.nsfw = false
         } else global.DATABASE._data.chats[m.chat] = {
           isBanned: false,
           welcome: true, 
@@ -189,6 +190,7 @@ module.exports = {
           antiLink: false,
           antiLink2: false,
           antiToxic: false,
+          nsfw: false,
         }
       } catch (e) {
         console.error(e)
